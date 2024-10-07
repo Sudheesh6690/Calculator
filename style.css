@@ -14,8 +14,9 @@ body {
 }
 
 .calculator {
-    width: 300px;
-    background-color: #fff;
+    width: 100%;
+    max-width: 320px; 
+    background-color: #aaaa;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -24,51 +25,74 @@ body {
 #display {
     width: 100%;
     height: 70px;
-    font-size: 24px;
+    font-size: 2.5em;
     text-align: right;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
-    background-color: #97ad6eaf;
+    background-color: #9bb669;
+    border-radius: 6px;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    margin-top:1.5em;
 }
 
 button {
     width: 100%;
-    padding: 20px;
-    font-size: 18px;
-    background-color: #d45a5a;
+    padding: 15px; 
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #000000;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    line-height: 1.6em;
+    border-radius: 40px;
     cursor: pointer;
     transition: background-color 0.2s;
+    margin-top: 3px;
 }
 
-.assign-btn{
-    background-color:green;
+.assign-btn {
+    background-color: #ff9501;
+    color: #fff;
+    
+}
+
+.clr-btn {
+    background-color: rgba(0, 0, 0, 0.925);
     color: #fff;
 }
 
-.clr-btn{
-    background-color:rgba(179, 4, 4, 0.925);
-    color: #fff;
-}
-
-.add-btn{
-    background-color: black;
+.add-btn {
+    background-color: #ff9501;
     color: #ffff;
 }
 
 button:hover {
-    background-color: #ddd;
+    background-color: #dddddd;
+    color: #000000;
 }
 
 button:active {
-    background-color: #bbb;
+    background-color: #43962f;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 600px) {
+    .calculator {
+        width: 90%; 
+    }
+
+    button {
+        padding: 10px; 
+        font-size: 16px;
+    }
+
+    #display {
+        font-size: 20px;
+    }
 }
