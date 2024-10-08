@@ -30,7 +30,9 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     border: none;
-    background-color: #9bb669;
+    /* background-color: #9bb669; */
+    background-color: #8993a0aa;
+
     border-radius: 6px;
 }
 
@@ -57,7 +59,7 @@ button {
 }
 
 .assign-btn {
-    background-color: #ff9501;
+    background-color: #157a0b;
     color: #fff;
     
 }
